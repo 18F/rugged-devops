@@ -3,6 +3,9 @@ permalink: /
 title: Introduction
 ---
 
+This guide describes how 18F builds and operates secure, resilient,
+maintainable distributed systems in the cloud.
+
 The DevOps movement emerged from internet companies that had to solve a
 wicked problem: how to build reliable, secure distributed systems at
 an unprecedented scale, while enabling a rate of change to those
