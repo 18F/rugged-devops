@@ -33,7 +33,7 @@ expand_nav: true
 navigation:
 - text: Introduction
   internal: true
-- text: Principles of DevOps
+- text: The Principles of DevOps
   url: devops-principles/
   internal: true
   children:
@@ -43,6 +43,52 @@ navigation:
 - text: Building Secure Applications
   url: secure-applications/
   internal: true
+  children:
+  - text: Secure Development Principles
+    url: principles/
+    internal: true
+  - text: Cryptography 101
+    url: cryptography-101/
+    internal: true
+  - text: Data Protection
+    url: data-protection/
+    internal: true
+  - text: Managing Identity and Access Control
+    url: identity-access/
+    internal: true
+  - text: Logging and Audit Trails
+    url: logging/
+    internal: true
+  - text: Multi-factor Authentication
+    url: multi-factor-auth/
+    internal: true
+  - text: Preventing Cross-Site Request Forgery
+    url: preventing-csrf/
+    internal: true
+  - text: Preventing SQL Injection
+    url: preventing-sqli/
+    internal: true
+  - text: Preventing Cross-Site Scripting
+    url: preventing-xss/
+    internal: true
+  - text: Preventing arbitrary-redirect vulnerabilities
+    url: redirects/
+    internal: true
+  - text: Secure Development Lifecycles
+    url: secure-development-lifecycles/
+    internal: true
+  - text: Securing Web API
+    url: securing-web-apis/
+    internal: true
+  - text: Session Management
+    url: session-management/
+    internal: true
+  - text: Threat Modeling
+    url: threat-modeling/
+    internal: true
+  - text: TLS/SSL Best Practices
+    url: tls/
+    internal: true
 
 repos:
 - name: Rugged DevOps
