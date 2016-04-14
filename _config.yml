@@ -77,7 +77,7 @@ navigation:
   - text: Secure Development Lifecycles
     url: secure-development-lifecycles/
     internal: true
-  - text: Securing Web API
+  - text: Securing Web APIs
     url: securing-web-apis/
     internal: true
   - text: Session Management
