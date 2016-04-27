@@ -37,6 +37,8 @@ There are several techniques you can employ to prevent SQL injection attacks. In
 * Option #2 (acceptable): Use parameterized queries
 * Option #3 (last resort): Escape all user-supplied input
 
+Read on for details!
+
 ### Preventing SQLi using database abstraction layers (preferred)
 
 Most modern database abstraction layers automatically protect against SQL
