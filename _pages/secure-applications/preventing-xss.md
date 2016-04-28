@@ -11,7 +11,7 @@ XSS comes in several "flavors":
 
 * *Stored XSS* (also sometimes called *Persistant XSS*) are attacks where the injected script is permanently stored on the server (e.g. in a database). The malicious script is served whenever someone hits a page where that value is rendered unescapted. Stored XSS attacks are generally the highest risk, since they can persist indefinately.
 
-* *Reflected XSS* occurs where the injected script is "reflected" from user input, such is from an error page, or search query, etc. Reflected attacks are harder to deliver to victims since they'll show up in the URL of shared links, require tricking a victim into posting a form, or othewise require extra steps than just getting a user to visit a page. 
+* *Reflected XSS* occurs where the injected script is "reflected" from user input, such as from an error page, or search query, etc. Reflected attacks are harder to deliver to victims since they'll show up in the URL of shared links, require tricking a victim into posting a form, or othewise require extra steps than just getting a user to visit a page. 
 
 * *Self-XSS* occurs when user-supplied data is only reflected back to the user who entered it. Self-XSS are generally lowest risk (since they can only hurt the user executing them), but should be fixed as they often indicate the potential for a worse issue later on.
 
