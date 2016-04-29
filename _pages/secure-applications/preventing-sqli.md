@@ -3,7 +3,7 @@ permalink: /secure-applications/preventing-sqli/
 title: Preventing SQL Injection
 ---
 
-## WHat is is SQL injection?
+## What is SQL injection?
 
 *SQL injection* (SQLi) occurs when an attacker is able to modify a database query by "injecting" parameters that aren't escaped and are thus executed by the database. For example, you're vulnerable if you're constructing queries using string interpolation:
 
@@ -27,7 +27,7 @@ SELECT * FROM accounts WHERE username = '' OR 1=1;
 
 If you find [this XKCD comic](https://xkcd.com/327/) funny, then you  understand SQL injection attacks:
 
-![http://xkcd.com/327/](http://imgs.xkcd.com/comics/exploits_of_a_mom.png)
+![https://xkcd.com/327/](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
 
 ## Preventing SQLi
 
@@ -44,8 +44,7 @@ Read on for details!
 Most modern database abstraction layers automatically protect against SQL
 inject attacks. If you're using a modern web framework, or modern ORM/database abstraction layers, you probably have strong protections out of the box. However, you should double-check your library/framework's documentation to be sure, and to read about any caveats.
 
-Here's a list of our recommended libraries -- ones we know to have good, solid
-protections -- along with some pointers to caveats:
+Here's a list of our recommended libraries -- ones we know to have good, solid protections -- along with some pointers to caveats:
 
 * Django's model layer (Python/Django) - with the exception of [methods specifically devoted to executing raw SQL](https://docs.djangoproject.com/es/1.9/topics/security/#sql-injection-protection), all of Django's "queryset"
 APIs are SQLi-safe.
