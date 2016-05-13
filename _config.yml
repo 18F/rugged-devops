@@ -89,6 +89,13 @@ navigation:
   - text: TLS/SSL Best Practices
     url: tls/
     internal: true
+- text: Cloud Operations
+  url: cloud-operations/
+  internal: true
+  children:
+  - text: Principles
+    url: principles/
+    internal: true
 
 repos:
 - name: Rugged DevOps

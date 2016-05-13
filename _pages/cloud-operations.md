@@ -1,0 +1,16 @@
+---
+permalink: /cloud-operations/
+title: Cloud Operations
+---
+
+Cloud computing is a model in which somebody else owns and manages the physical systems on which our services run, and we pay only for the resources we consume. There are two important defining characteristics of cloud computing. First, we do not have to pay for the capital costs of purchasing and maintaining infrastructure, but instead treat it like a utility. Second, we can manage the lifecycle of the resources we use on demand through an API, without any manual intervention. In other words, in cloud computing, we should never need to create tickets, send emails, or otherwise communicate with a person to get access to the resources we need.
+
+Cloud systems are typically separated into three types: _Infrastructure as a Service_ (IaaS), _Platform as a Service_ (PaaS) and _Software as a Service_ (SaaS). In the IaaS model, cloud providers give us access to infrastructure primitives such as virtual hosts, storage, DNS, databases and so forth. Each of these must be configured and managed individually, and we must manage the lifecycle of the applications that run on the infrastructure ourselves. In contrast, in the a platform as a service model much of the infrastructure is pre-configured, and the platform manages the lifecycle of the applications deployed to it. Typically, suitably designed applications can be deployed to a PaaS using a single command and be up and running in seconds. Finally, SaaS provides whole applications as a utility service, for example GMail, Slack and SalesForce.
+
+In this section of the guide, we'll show how to use IaaS and PaaS to build reliable, secure distributed systems. We take as our starting point the following principles:
+
+* Our underlying infrastructure is fundamentally unreliable. There will be network partitions, hardware failures, and misconfigurations all of which will act to degrade service.
+* Our systems will be under constant attack from bad actors both inside and outside our organizations, and breaches are inevitable.
+* We will be operating systems that provide essential public services, and which must be maintained and evolved long after the people who created them have left our organization.
+
+In the old world where infrastructure was expensive and hard to maintain, operators would invest a great deal of effort in configuring infrastructure components correctly, often by hand, and then aiming to maintain long uptimes. _Mean time between failures_ (MTBF) was the most important metric. In a world of cloud infrastructure where it is cheap to provision new systems and comprehensive automation is available, and where we must follow the principles above, the most important metric is _mean time to restore service_ (MTRS). In the event of inevitable failures and security breaches, the vital question is this: how can we design and evolve human operated systems that enable us to detect failures and intrusions and restore service as rapidly as possible? Our goal is not just to create resilient, secure systems, but to ensure we can learn from failures and evolve our systems based on these learnings. Indeed, we will deliberately subject our systems to constant attack both in order to accelerate this learning process, and to ensure our systems really are secure and resilient to known threats.
